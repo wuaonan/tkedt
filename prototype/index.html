@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>驾考刷题 App 原型</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Prototype</p>
+        <h1>驾考刷题 App</h1>
+      </div>
+      <p class="intro">
+        面向科目一备考的移动端原型，突出继续练习、即时判题、模考结果和错题复习。
+      </p>
+    </header>
+
+    <main class="gallery">
+      <section class="phone">
+        <div class="screen home-screen">
+          <div class="status-row">
+            <span>18:40</span>
+            <span>4G</span>
+          </div>
+          <div class="hero-panel">
+            <p class="eyebrow">今日学习</p>
+            <h2>继续冲刺科目一</h2>
+            <p class="hero-copy">已完成 428 / 1639 题，今天再刷 20 题就能更新学习曲线。</p>
+            <div class="hero-stats">
+              <div>
+                <strong>81%</strong>
+                <span>正确率</span>
+              </div>
+              <div>
+                <strong>17</strong>
+                <span>今日已刷</span>
+              </div>
+              <div>
+                <strong>43</strong>
+                <span>错题待复习</span>
+              </div>
+            </div>
+            <button class="primary-button">继续练习</button>
+          </div>
+
+          <div class="section-block">
+            <div class="section-heading">
+              <h3>训练模式</h3>
+              <span>按场景练习</span>
+            </div>
+            <div class="mode-list">
+              <article>
+                <strong>顺序练习</strong>
+                <p>从上次停留位置继续，适合一轮完整过题。</p>
+              </article>
+              <article>
+                <strong>章节练习</strong>
+                <p>按交通标志、处罚规则、灯光等专题强化。</p>
+              </article>
+              <article>
+                <strong>模拟考试</strong>
+                <p>完整计时答题，结束后生成成绩与薄弱点。</p>
+              </article>
+            </div>
+          </div>
+
+          <nav class="tabbar">
+            <span class="active">首页</span>
+            <span>练习</span>
+            <span>模考</span>
+            <span>错题</span>
+            <span>我的</span>
+          </nav>
+        </div>
+      </section>
+
+      <section class="phone">
+        <div class="screen practice-screen">
+          <div class="practice-top">
+            <span>顺序练习</span>
+            <strong>第 287 / 1639 题</strong>
+          </div>
+
+          <div class="progress-line">
+            <div class="progress-fill" style="width: 37%"></div>
+          </div>
+
+          <article class="question-card">
+            <p class="question-type">单选题</p>
+            <h2>驾驶机动车在道路上违反交通安全法规的行为属于什么行为？</h2>
+            <div class="options">
+              <button>A. 违章行为</button>
+              <button class="selected">B. 违法行为</button>
+              <button>C. 过失行为</button>
+              <button>D. 违规行为</button>
+            </div>
+          </article>
+
+          <div class="analysis-card">
+            <div class="result-pill correct">回答正确</div>
+            <p><strong>正确答案：</strong>B</p>
+            <p>
+              <strong>试题解析：</strong>违反《道路交通安全法》的行为属于违法行为，产品中答题后应立即展示解析并支持直接进入下一题。
+            </p>
+          </div>
+
+          <div class="action-row">
+            <button class="ghost-button">收藏</button>
+            <button class="primary-button">下一题</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="phone">
+        <div class="screen chapter-screen">
+          <div class="page-title">
+            <p class="eyebrow">专项练习</p>
+            <h2>按章节突破薄弱项</h2>
+          </div>
+
+          <div class="chapter-list">
+            <article>
+              <div>
+                <strong>交通标志</strong>
+                <p>182 题 · 正确率 76%</p>
+              </div>
+              <span>继续</span>
+            </article>
+            <article>
+              <div>
+                <strong>灯光使用</strong>
+                <p>67 题 · 正确率 64%</p>
+              </div>
+              <span>强化</span>
+            </article>
+            <article>
+              <div>
+                <strong>处罚与扣分</strong>
+                <p>214 题 · 正确率 58%</p>
+              </div>
+              <span>优先</span>
+            </article>
+            <article>
+              <div>
+                <strong>安全文明驾驶</strong>
+                <p>129 题 · 正确率 83%</p>
+              </div>
+              <span>完成</span>
+            </article>
+          </div>
+
+          <div class="insight-panel">
+            <p class="eyebrow">系统建议</p>
+            <h3>先刷处罚与扣分</h3>
+            <p>最近 3 次模考中，这一类题目错误率最高，建议优先完成 30 题强化训练。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="phone">
+        <div class="screen exam-screen">
+          <div class="page-title">
+            <p class="eyebrow">模拟考试</p>
+            <h2>本次成绩 94 分</h2>
+          </div>
+
+          <div class="score-ring">
+            <div>
+              <strong>94</strong>
+              <span>通过</span>
+            </div>
+          </div>
+
+          <div class="result-grid">
+            <article>
+              <strong>用时</strong>
+              <span>27:16</span>
+            </article>
+            <article>
+              <strong>错题</strong>
+              <span>3 题</span>
+            </article>
+            <article>
+              <strong>标志题</strong>
+              <span>需复习</span>
+            </article>
+            <article>
+              <strong>下一步</strong>
+              <span>错题重练</span>
+            </article>
+          </div>
+
+          <div class="action-stack">
+            <button class="primary-button">查看错题解析</button>
+            <button class="ghost-button">再考一次</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="phone">
+        <div class="screen wrong-screen">
+          <div class="page-title">
+            <p class="eyebrow">错题本</p>
+            <h2>43 题待复习</h2>
+          </div>
+
+          <div class="wrong-summary">
+            <div>
+              <strong>12</strong>
+              <span>处罚规则</span>
+            </div>
+            <div>
+              <strong>9</strong>
+              <span>交通标志</span>
+            </div>
+            <div>
+              <strong>22</strong>
+              <span>其他</span>
+            </div>
+          </div>
+
+          <div class="wrong-list">
+            <article>
+              <strong>驾驶机动车不按交通信号灯指示通行，一次记几分？</strong>
+              <p>最近错 2 次 · 处罚规则</p>
+            </article>
+            <article>
+              <strong>这个标志是何含义？</strong>
+              <p>最近错 3 次 · 交通标志</p>
+            </article>
+            <article>
+              <strong>夜间在照明不良路段会车时如何使用灯光？</strong>
+              <p>最近错 1 次 · 灯光使用</p>
+            </article>
+          </div>
+
+          <button class="primary-button">开始错题重练</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
