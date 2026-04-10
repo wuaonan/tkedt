@@ -16,6 +16,8 @@
 - 移动端原型
   - `prototype/index.html`
   - `prototype/styles.css`
+- React Native App 外壳
+  - `mobile/`
 
 ## 当前阶段
 
@@ -24,6 +26,7 @@
 1. 题库接口分析与数据抓取
 2. 刷题 App 的 MVP 需求文档整理
 3. 移动端原型页面搭建
+4. React Native + Expo 的 iOS / Android 双端 App 外壳
 
 下一步计划：
 
@@ -75,6 +78,28 @@ python3 -m http.server 8000
 
 ```text
 http://127.0.0.1:8000
+```
+
+## 移动端 App
+
+React Native 项目位于：
+
+- `mobile/`
+
+当前已经包含：
+
+- Expo + TypeScript 基础骨架
+- React Navigation 底部导航
+- 首页、章节、模考、错题本、我的 5 个核心页面
+- 单题练习页
+- 接入本仓库内已有题库 JSON
+
+进入移动端项目：
+
+```bash
+cd mobile
+npm install
+npm run start
 ```
 
 ## 产品方向

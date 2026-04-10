@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "TKEDT",
+    "slug": "tkedt-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wuaonan.tkedt"
+    },
+    "android": {
+      "package": "com.wuaonan.tkedt"
+    }
+  }
+}
